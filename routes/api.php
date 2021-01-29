@@ -24,3 +24,4 @@ Route::group(['prefix' => 'products'], function() {
 });
 Route::apiResource('/clients', 'ClientController');
 Route::apiResource('/sales', 'SaleController');
+Route::apiResource('/receivedProducts', 'ReceivedProductController');

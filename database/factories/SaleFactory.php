@@ -14,6 +14,11 @@ $factory->define(Sale::class, function (Faker $faker) {
         },
         'client_id' => function() {
             return App\Model\Client::all()->random();
+        },
+
+        //test
+        'product_id' => function() {
+            return App\Model\Product::all()->random();
         }
     ];
 });

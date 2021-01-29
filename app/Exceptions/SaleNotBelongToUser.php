@@ -8,6 +8,6 @@ class SaleNotBelongToUser extends Exception
 {
     public function render()
     {
-        return ['errors' => 'Sale Not Belongs to User'];
+        return ['errors' => 'Sale Not Belongs to You'];
     }
 }

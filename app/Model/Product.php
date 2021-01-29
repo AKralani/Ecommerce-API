@@ -14,4 +14,19 @@ class Product extends Model
 	{
 		return $this->hasMany(Review::class);
 	}
+
+	//test
+	/* public function solds()
+    {
+        return $this->hasMany('App\SoldProduct');
+    } */
+	public function sales()
+    {
+        return $this->hasMany('App\Model\Sale');
+	}
+	
+	public function receivedProducts()
+    {
+        return $this->hasMany('App\ReceivedProduct');
+    }
 }
